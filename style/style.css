@@ -25,7 +25,7 @@
 
 h1 {
   font-size: 140px;
-  font-weight: 6200;
+  font-weight: 600;
   letter-spacing: -8px;
   color: rgb(25, 28, 19);
   margin-bottom: 10px;
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
   font-size: 105px;
-  font-weight: 7000;
+  font-weight: 700;
   letter-spacing: 4px;
   margin-top: 4px;
   margin-right: 580px;
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
   font-size: 70px;
-  font-weight: 240px;
+  font-weight: 540;
   bottom: 185px;
   right: 176px;
   position: absolute;
