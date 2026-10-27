@@ -1,21 +1,707 @@
-.bg-img {
-  display: block;
-  width: 800px;
-  height: 600px;
-  object-fit: cover;
-  object-position: 0% 50%;
+.poster {
+  width: 1440px;
+  height: 900px;
+  background-color: #f7f7f0;
+  border: 36px solid rgb(255, 213, 0);
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.cat-img {
-  display: block;
-  width: 200px;
+.text {
+  animation: draw 1s ease-in-out forwards;
+}
+
+@keyframes draw {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 140px;
+  font-weight: 6200;
+  letter-spacing: -8px;
+  color: rgb(25, 28, 19);
+  margin-bottom: 10px;
+  margin-left: 250px;
+
+  /* text-align: right; */
+}
+
+h2 {
+  font-size: 105px;
+  font-weight: 7000;
+  letter-spacing: 4px;
+  margin-top: 4px;
+  margin-right: 580px;
+  text-align: right;
+}
+
+h3 {
+  font-size: 70px;
+  font-weight: 240px;
+  bottom: 185px;
+  right: 176px;
   position: absolute;
-  top: 250px;
-  left: 200px;
 }
 
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
+h4 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  bottom: 350px;
+  left: 270px;
+  position: absolute;
+}
+
+h5 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  bottom: 300px;
+  left: 316px;
+  position: absolute;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 500;
+  bottom: -5px;
+  left: 46px;
+  position: absolute;
+}
+
+.img_1 {
+  position: absolute;
+  width: 220px;
+  left: 40px;
+  top: 56px;
+}
+
+.img_2 {
+  position: absolute;
+  width: 390px;
+  left: 910px;
+  top: 40px;
+}
+.img_3 {
+  position: absolute;
+  width: 540px;
+  left: 510px;
+  top: 296px;
+}
+.img_4 {
+  position: absolute;
+  width: 260px;
+  left: 1070px;
+  top: 440px;
+}
+.img_5 {
+  position: absolute;
+  width: 220px;
+  left: 60px;
+  top: 460px;
+}
+.img_6 {
+  position: absolute;
+  width: 320px;
+  left: 396px;
+  top: 600px;
+}
+.img_7 {
+  position: absolute;
+  width: 100px;
+  left: 1040px;
+  bottom: 60px;
+}
+.img_8 {
+  position: absolute;
+  width: 220px;
+  left: 260px;
+  top: 300px;
+}
+/* 버튼애니메이션 */
+.button {
+  cursor: pointer;
+  transition: transform 0.5s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button.clicked {
+  transform: scale(1.2);
+}
+
+/* 눌럿을때작은도형 */
+
+.group1 {
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  display: none;
+  z-index: 1;
+}
+
+.group1.clicked {
+  display: block;
+  animation: boing 0.5s ease-out both;
+}
+
+.mini_1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #b58a24;
+  border-radius: 50%;
+  top: 0px;
+  left: 90px;
+}
+
+.mini_2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #b58a24;
+  border-radius: 50%;
+  top: 45px;
+  left: 165px;
+}
+
+.mini_3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #b58a24;
+  border-radius: 50%;
+  top: 90px;
+  left: 115px;
+}
+
+.mini_4 {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #34c7ab;
+  border-radius: 50%;
+  top: 120px;
+  left: 205px;
+}
+
+/* 그룹2 */
+.group2 {
+  position: absolute;
+  top: 300px;
+  left: 1050px;
+  z-index: 1;
+  display: none;
+}
+
+.group2.clicked {
+  display: block;
+  animation: boing 0.5s ease-out both;
+}
+
+.mini_5 {
+  position: absolute;
+  width: 165px;
+  height: 24px;
+  background-color: #ab4bf5;
+  transform: rotate(-20deg);
+}
+
+.mini_6 {
+  position: absolute;
+  top: 25px;
+  left: 90px;
+  width: 145px;
+  height: 15px;
+  background-color: #ab4bf5;
+}
+
+.mini_7 {
+  position: absolute;
+  top: 75px;
+  left: 45px;
+  width: 120px;
+  height: 36px;
+  background-color: #ab4bf5;
+  transform: rotate(25deg);
+}
+
+.mini_8 {
+  position: absolute;
+  top: 60px;
+  left: 180px;
+  width: 30px;
+  height: 30px;
+  background-color: #0146fb;
+}
+
+.mini_9 {
+  position: absolute;
+  top: 120px;
+  left: 245px;
+  width: 25px;
+  height: 25px;
+  background-color: #0146fb;
+}
+
+.mini_10 {
+  position: absolute;
+  top: 50px;
+  left: 155px;
+  width: 20px;
+  height: 20px;
+  background-color: #0146fb;
+}
+
+/* 그룹 3*/
+.group3 {
+  position: absolute;
+  top: 130px;
+  left: 740px;
+  z-index: 1;
+  display: none;
+}
+
+.group3.clicked {
+  display: block;
+  animation: boing 0.5s ease-out both;
+}
+
+.mini_11 {
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  width: 65px;
+  height: 22px;
+  background-color: #ff9ce1;
+  border-radius: 50%;
+  transform: rotate(-30deg);
+}
+
+.mini_12 {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  width: 35px;
+  height: 35px;
+  background-color: #fc610f;
+  border-radius: 50%;
+}
+
+.mini_13 {
+  position: absolute;
+  top: 80px;
+  left: 0%;
+  width: 38px;
+  height: 38px;
+  background-color: #fc610f;
+  border-radius: 50%;
+}
+
+.mini_14 {
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  width: 80px;
+  height: 17px;
+  background-color: #ff9ce1;
+  border-radius: 50%;
+  transform: rotate(25deg);
+}
+
+.mini_15 {
+  position: absolute;
+  top: 145px;
+  left: 45px;
+  width: 25px;
+  height: 25px;
+  background-color: #fc610f;
+}
+
+.mini_16 {
+  position: absolute;
+  top: 125px;
+  left: 95px;
+  width: 22px;
+  height: 22px;
+  background-color: #fc610f;
+  border-radius: 50%;
+}
+
+/* 그룹 4*/
+.group4 {
+  position: absolute;
+  top: 620px;
+  left: 1180px;
+  z-index: 1;
+  display: none;
+}
+
+.group4.clicked {
+  display: block;
+}
+
+.mini_17 {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 26px;
+  height: 80px;
+  background-color: #0146fb;
+}
+
+.mini_18 {
+  position: absolute;
+  top: 20px;
+  left: 85px;
+  width: 75px;
+  height: 30px;
+  background-color: #fdcf07;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+}
+
+.mini_19 {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #fc610f;
+  border-radius: 50%;
+}
+
+.mini_20 {
+  position: absolute;
+  top: 105px;
+  left: 70px;
+  width: 55px;
+  height: 10px;
+  background-color: #62c4ad;
+  transform: rotate(25deg);
+}
+
+.mini_21 {
+  position: absolute;
+  top: 140px;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  background-color: #fc610f;
+  border-radius: 50%;
+}
+
+.group4.clicked div {
+  animation: boing 0.5s ease-out both;
+}
+
+.group5 {
+  position: absolute;
+  top: 550px;
+  left: 300px;
+  z-index: 1;
+  display: none;
+}
+
+.group5.clicked {
+  display: block;
+}
+
+.mini_22 {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #0e9208;
+  border-radius: 50%;
+}
+
+.mini_23 {
+  position: absolute;
+  top: 25px;
+  left: 100px;
+  width: 55px;
+  height: 35px;
+  background-color: #34c7ab;
+  transform: rotate(-30deg);
+}
+
+.mini_24 {
+  position: absolute;
+  top: 85px;
+  left: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: #34c7ab;
+}
+
+.mini_25 {
+  position: absolute;
+  top: 135px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: #0e9208;
+  border-radius: 50%;
+}
+
+.mini_26 {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  width: 25px;
+  height: 25px;
+  background-color: #0e9208;
+  border-radius: 50%;
+}
+
+.group5.clicked div {
+  animation: boing 0.5s ease-out both;
+}
+
+/* 그룹 6  */
+.group6 {
+  position: absolute;
+  top: 670px;
+  left: 790px;
+  z-index: 1;
+  display: none;
+}
+
+.group6.clicked {
+  display: block;
+}
+
+.mini_27 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 20px;
+  background-color: #0146fb;
+  transform: rotate(25deg);
+}
+
+.mini_28 {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  width: 165px;
+  height: 18px;
+  background-color: #fdcf07;
+  transform: rotate(-17deg);
+}
+
+.mini_29 {
+  position: absolute;
+  top: 52px;
+  left: 5px;
+  width: 125px;
+  height: 12px;
+  background-color: #34c7ab;
+}
+
+.mini_30 {
+  position: absolute;
+  top: 77px;
+  left: 35px;
+  width: 90px;
+  height: 15px;
+  background-color: #ab4bf5;
+  transform: rotate(-7deg);
+}
+
+.mini_31 {
+  position: absolute;
+  top: 112px;
+  left: 0px;
+  width: 151px;
+  height: 20px;
+  background-color: #0146fb;
+  transform: rotate(2deg);
+}
+
+.group6.clicked div {
+  animation: boing 0.5s ease-out both;
+}
+
+/* 그룹 7 */
+.group7 {
+  position: absolute;
+  top: 670px;
+  left: 920px;
+  z-index: 1;
+  display: none;
+}
+
+.group7.clicked {
+  display: block;
+}
+
+/* .mini_32 {
+  position: absolute;
+  top: 60px;
+  left: 10;
+  width: 42px;
+  height: 24px;
+  background-color: #ff9ce1;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+} */
+
+.mini_33 {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 72px;
+  height: 20px;
+  background-color: #ff9ce1;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.mini_34 {
+  position: absolute;
+  top: 54px;
+  left: 20px;
+  width: 48px;
+  height: 24px;
+  background-color: #ff9ce1;
+  border-radius: 50%;
+  transform: rotate(25deg);
+}
+
+.mini_35 {
+  position: absolute;
+  top: 102px;
+  left: 48px;
+  width: 48px;
+  height: 18px;
+  background-color: #ff9ce1;
+  border-radius: 50%;
+  transform: rotate(-12deg);
+}
+
+.group7.clicked div {
+  animation: boing 0.5s ease-out both;
+}
+
+/* 그룹 8 */
+.group8 {
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  z-index: 1;
+  display: none;
+}
+
+.group8.clicked {
+  display: block;
+}
+
+.mini_36 {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 22px;
+  height: 22px;
+  background-color: #fdcf07;
+}
+
+.mini_37 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #fdcf07;
+}
+
+.mini_38 {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: #fdcf07;
+}
+
+.mini_39 {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  width: 40px;
+  height: 40px;
+  background-color: #fdcf07;
+}
+
+.group8.clicked div {
+  animation: boing 0.5s ease-out both;
+}
+
+@keyframes boing {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+
+  65% {
+    opacity: 1;
+    scale: 1.2;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.group1.clicked div,
+.group2.clicked div,
+.group3.clicked div,
+.group4.clicked div,
+.group5.clicked div,
+.group6.clicked div,
+.group7.clicked div,
+.group8.clicked div {
+  animation: boing 0.8s ease-out both;
+}
+
+.poster h1,
+.poster h2,
+.poster h3,
+.poster h4,
+.poster h5,
+.poster p {
+  z-index: 30;
+  pointer-events: none;
+}
+
+.poster h1 {
+  position: relative;
+  z-index: 100;
+}
+
+.click_text {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  z-index: 30;
+  font-size: 30px;
+  font-weight: 500;
+  color: #0146fb;
+  letter-spacing: 1px;
 }
