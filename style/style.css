@@ -36,28 +36,31 @@ h1 {
 
 h2 {
   font-size: 105px;
-  font-weight: 700;
-  letter-spacing: 4px;
+  font-weight: 540;
+  letter-spacing: 6px;
   margin-top: 4px;
   margin-right: 580px;
   text-align: right;
+  color: rgb(25, 28, 19);
 }
 
 h3 {
   font-size: 70px;
-  font-weight: 540;
+  font-weight: 590;
   bottom: 185px;
   right: 176px;
   position: absolute;
+  color: rgb(25, 28, 19);
 }
 
 h4 {
   font-size: 48px;
   font-weight: 600;
   letter-spacing: -1px;
-  bottom: 350px;
+  bottom: 345px;
   left: 270px;
   position: absolute;
+  color: rgb(25, 28, 19);
 }
 
 h5 {
@@ -67,6 +70,7 @@ h5 {
   bottom: 300px;
   left: 316px;
   position: absolute;
+  color: rgb(25, 28, 19);
 }
 
 p {
@@ -136,6 +140,7 @@ p {
 
 .button:hover {
   transform: scale(1.1);
+  filter: drop-shadow(2px 2px 24px #fdcf07);
 }
 
 .button.clicked {
